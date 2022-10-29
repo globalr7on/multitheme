@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/consulting_startup', function () {
+    return view('themes.consulting_startup.index');
+});
