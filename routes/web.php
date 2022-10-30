@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/consulting_startup', function () {
     return view('themes.consulting_startup.index');
 });
+
+Route::get('/design_agency', function () {
+    return view('themes.design_agency.index');
+});
