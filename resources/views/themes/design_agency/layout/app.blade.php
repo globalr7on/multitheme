@@ -7,54 +7,45 @@
     <!-- Author -->
     <meta name="author" content="Themes Industry">
     <!-- description -->
-    <meta name="description" content="Design Agency is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
     <!-- keywords -->
-    <meta name="keywords" content="Design Agency, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+    <meta name="keywords" content="Creative Startup, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
     <!-- Page Title -->
-    <title>Design Agency | Standalone</title>
-    <!-- Favicon -->
+    <title>Design Agency | MegaOne HTML5 Template</title>
+     <!-- Favicon -->
     <link href="" rel="icon">
     <!-- Bundle -->
-    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/bundle.min.css') }}">
+    <link href="{{ asset('themes/design_agency/css/bundle.min.css') }}" rel="stylesheet">
     <!-- Plugin Css -->
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/line-awesome.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/revolution-settings.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/jquery.fancybox.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/owl.carousel.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/cubeportfolio.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/LineIcons.min.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/slick.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/slick-theme.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/wow.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/line-awesome.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/revolution-settings.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/jquery.fancybox.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/owl.carousel.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/cubeportfolio.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/LineIcons.min.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/slick.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/slick-theme.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/wow.css') }}" >
     <!-- Style Sheet -->
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/blog.css') }}">
-    <link  rel="stylesheet" href="{{ asset('themes/design_agency/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/blog.css') }}" >
+    <link rel="stylesheet" href="{{ asset('themes/design_agency/css/style.css') }}" >
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="200">
-    <!-- Preloader -->
-<div class="preloader">
-    <div class="dot-container">
-        <div class="dot dot-1"></div>
-        <div class="dot dot-2"></div>
-        <div class="dot dot-3"></div>
-    </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
-            </filter>
-        </defs>
-    </svg>
-</div>
-<!-- Preloader End -->
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
 @include('themes.design_agency.layout.header')
 
 @yield('content')
 
 @include('themes.design_agency.layout.footer')
+
+
+<!--Animated Cursor-->
+<div class="aimated-cursor">
+    <div class="cursor">
+        <div class="cursor-loader"></div>
+    </div>
+</div>
+<!--Animated Cursor End-->
 
 <!--Scroll Top Start-->
 <span class="scroll-top-arrow"><i class="fas fa-angle-up"></i></span>

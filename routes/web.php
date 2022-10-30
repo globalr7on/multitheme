@@ -24,3 +24,8 @@ Route::get('/consulting_startup', function () {
 Route::get('/design_agency', function () {
     return view('themes.design_agency.index');
 });
+
+
+Route::get('/design_agency/standalone', function () {
+    return view('themes.design_agency.standalone');
+});
