@@ -1,4 +1,4 @@
-@extends('themes.consulting_startup.layout.app')
+@extends('themes.consulting_startup.layout.app', ['activePage' => 'index'])
 
 @section('content')
   <!-- START REV SLIDER SECTION -->

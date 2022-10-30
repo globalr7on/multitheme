@@ -39,43 +39,82 @@
     <span></span>
   </div>
 
-  <!--    NAV-BAR FOR LARGE SCREEN-->
-  <nav id="my-nav1" class="navbar navbar-expand-sm navbar-light rounded-bar">
-    <div class="container">
-      <div class="logo">
-        <a href="/consulting_startup" class="scroll">
-          <img src="{{ asset('themes/consulting_startup/img/logo_img.png') }}" alt="Logo Img">
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent1" >
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="seventh nav-link before after scroll" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/prices">Our Prices</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="seventh nav-link before after" href="/consulting_startup/contact">Contact Us</a>
-            </li>
-          </ul>
+  <!-- NAV-BAR FOR LARGE SCREEN-->
+  @if($activePage == 'index')
+    <nav id="my-nav1" class="navbar navbar-expand-sm navbar-light rounded-bar">
+      <div class="container">
+        <div class="logo">
+          <a href="/consulting_startup" class="scroll">
+            <img src="{{ asset('themes/consulting_startup/img/logo_img.png') }}" alt="Logo Img">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1" >
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="seventh nav-link before after scroll" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/prices">Our Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/consulting_startup/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  @else
+    <nav id="my-nav1" class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <div class="logo">
+          <a href="/consulting_startup" class="scroll">
+            <img src="{{ asset('themes/consulting_startup/img/logo_img.png') }}" alt="Logo Img">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="seventh nav-link before after" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'about' ? 'active' : '' }}" href="/consulting_startup/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'services' ? 'active' : '' }}" href="/consulting_startup/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'projects' ? 'active' : '' }}" href="/consulting_startup/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'prices' ? 'active' : '' }}" href="/consulting_startup/prices">Our Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'blog' ? 'active' : '' }}" href="/consulting_startup/blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="seventh nav-link before after {{ $activePage == 'contact' ? 'active' : '' }}" href="/consulting_startup/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  @endif
 
   <!--MODEL WINDOW FOR NAV-BAR-->
   <div class="outer-window">
